@@ -8,12 +8,29 @@ h1{
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background: #2ab0a7;
+}
+
+.header {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+}
+
+.title {
+    color: aliceblue;
+    font-size: 30px;
+    padding-top: 50px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main {
+    height: calc(100vh - 100px);
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #2ab0a7;
-    width: 100vw;
-    height: 100vw;
 }
 ul{
     display: flex;
