@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo Trang Login</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section>
+        <!--Bắt Đầu Phần Hình Ảnh-->
+        <div class="img-bg">
+            <img src="./img/anh.JPEG"
+                alt="Hình Ảnh Minh Họa">
+        </div>
+        <!--Kết Thúc Phần Hình Ảnh-->
+        <!--Bắt Đầu Phần Nội Dung-->
+        <div class="noi-dung">
+            <div class="form">
+                <h2>Log in page</h2>
+                <h3>Welcome back! Please enter your details.</h3> 
+               
+                    <div class="input-form">
+                        <span>Usename</span>
+                        <input type="text" id = "username" name="username" required>
+                    </div>
+                    <div class="input-form">
+                        <span>Password</span>
+                        <input type="password" id = "password" name="" required>
+                    </div>
+                    <div class="nho-dang-nhap">
+                        <label><input type="checkbox" name=""> Remember me</label>
+                    </div>
+                    <div class="input-form">
+                        <input type="submit"  onclick="checkLogin()" value="Sign in">
+                    </div>
+
+                    <div class="input-form">
+                        <p>Don't have an account? <a href="#">Sign up here</a></p>
+                    </div>
+                
+                <h4>Log in with another account </h4>
+                <ul class="icon-dang-nhap">
+                    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-google" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </div>
+        <script src="script1.js"></script>
+        <!--Kết Thúc Phần Nội Dung-->
+    </section>
+</body>
+
+
+</html>
