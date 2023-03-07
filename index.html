@@ -11,30 +11,30 @@
 <body>
     
     <div class="header">
-        <div class="title">Chúc mừng ngày phụ nữ 8/3 🏵️</h1>
+        <div class="title">Chúc mừng ngày phụ nữ 8/3 🏵️</div>
     </div>
     <div class="main">
         <ul>
             <li class="card-item">
-                <img src="./img/dat1.jpg">
+                <img class="img-class" src="./img/dat1.jpg">
                 <span>
                     <i class="fa-regular" fa-eye></i>
                 </span>
             </li>
             <li class="card-item">
-                <img src="./img/dat2.jpg">
+                <img class="img-class" src="./img/dat2.jpg">
                 <span>
                     <i class="fa-regular" fa-eye></i>
                 </span>
             </li>
             <li class="card-item">
-                <img src="./img/dat3.jpg">
+                <img class="img-class" src="img/chau4.jpg">
                 <span>
                     <i class="fa-regular" fa-eye></i>
                 </span>
             </li>
             <li class="card-item">
-                <img src="./img/img1.jpg">
+                <img class="img-class" src="img/chau1.jpg">
                 <span>
                     <i class="fa-regular" fa-eye></i>
                 </span>
@@ -44,4 +44,17 @@
     </div>
  
 </body>
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const name = urlParams.get('name')
+
+    const imgs = document.getElementsByClassName('img-class')
+    imgs[0].src = `img/${name}1.jpg`
+    imgs[0].src = `img/${name}2.jpg`
+    imgs[0].src = `img/${name}3.jpg`
+    imgs[0].src = `img/${name}4.jpg`
+</script>
 </html>
